@@ -1,0 +1,1 @@
+php -S localhost:8000 -t public public/index.php                Comando para executar o servidor do php no nosso dumento route -t

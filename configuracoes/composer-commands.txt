@@ -1,0 +1,13 @@
+composer init   Iniciar o projeto
+composer dumpautoload  gerar a pasta vendor que nela fica as dependencias da aplicação. (PRIMEIRO CONFIGURAR O PSR4 E CRIAR A PASTA SRC)
+"autoload": {
+        "psr-4": {
+            "ericksoares\\buscadorcursos\\": "src/"
+        }
+
+
+
+composer update
+composer require --no-dev
+composer install
+composer dumpautoload - para subir o psr-4 que é oq faz o mapeamento das classes fazendo o autoload

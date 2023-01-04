@@ -1,0 +1,4 @@
+psr0,4 falam sobre a questão de namespaces e a 4 não esta mais funcionano
+psr1,2 padroes de declarações
+psr7 HTTP Message Interface padronização das requisições HTTP
+psr11 Container de serviços

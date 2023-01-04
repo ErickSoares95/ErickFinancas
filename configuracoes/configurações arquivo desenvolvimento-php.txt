@@ -1,0 +1,7 @@
+extension_dir
+extension_curl, initl, mysqli, ssl, openssl, pdo_mysql
+display_errors =on,
+display_startups_errors = on
+log_errors = on
+error_log = C:/php8.0.2/php_errors.log
+error_reporting = E_ALL

@@ -1,0 +1,19 @@
+vendor/bin/phinx.bat 							após a configuração do config/db e phinx.php
+
+vendor/bin/phin.bat create CreateCategoryCosts 				Comando para criação das migrations
+
+vendor/bin/phinx.bat migrate						Gerar a migração
+
+vendor/bin/phinx.bat migrate -e production				migrar para ambiente de produção
+
+vendor/bin/phinx.bat rollback						reverter a migração
+
+vendor/bin/phinx.bat rollback -t=datadacriação				reverter migração especifica
+
+vendor/bin/phinx.bat rollback -t=0					reverter todas as migrações
+
+vendor/bin/phinx.bat seed:create CategoryCostsSeeder			Criar seeder
+
+
+
+
