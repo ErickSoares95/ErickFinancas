@@ -21,7 +21,7 @@ class Application
         return $this->serviceContainer->get($name);
     }
 
-    //adicionar um novo servico
+    //adicionar um novo servico usado nos plugin
     public function addService(string $name, $service) : void
     {
         if (is_callable($service)) {
@@ -36,6 +36,7 @@ class Application
         $plugin->register($this->serviceContainer);
     }
 
+    
     public function get($path, $action, $name = null) : Application
     {
         $routing = $this->Service("routing");
@@ -67,6 +68,7 @@ class Application
         $this->emitReponse($reponse);
     }
 
+    //trabalhar com repostaras psr7
     protected function emitReponse(ResponseInterface $response){
         $emitter = new SapiEmitter();
         $emitter->emit($response);

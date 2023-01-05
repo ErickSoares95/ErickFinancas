@@ -9,7 +9,7 @@ use Psr\Http\Message\RequestInterface;
 use ErickFinancas\ServiceContainerInterface;
 use Zend\Diactoros\ServerRequestFactory;
 
-class Routeplugin implements PluginInterface
+class RoutePlugin implements PluginInterface
 {
     
 	/**
