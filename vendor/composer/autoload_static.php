@@ -10,6 +10,8 @@ class ComposerStaticInit80221bd15d26d86dcaa676c4ea257ffa
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
+        '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -30,7 +32,9 @@ class ComposerStaticInit80221bd15d26d86dcaa676c4ea257ffa
             'Symfony\\Polyfill\\Php80\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
+            'Symfony\\Contracts\\Translation\\' => 30,
             'Symfony\\Component\\Yaml\\' => 23,
+            'Symfony\\Component\\Translation\\' => 30,
             'Symfony\\Component\\Filesystem\\' => 29,
             'Symfony\\Component\\Debug\\' => 24,
             'Symfony\\Component\\Console\\' => 26,
@@ -46,6 +50,10 @@ class ComposerStaticInit80221bd15d26d86dcaa676c4ea257ffa
         'I' => 
         array (
             'Interop\\Container\\' => 18,
+            'Illuminate\\Support\\' => 19,
+            'Illuminate\\Database\\' => 20,
+            'Illuminate\\Contracts\\' => 21,
+            'Illuminate\\Container\\' => 21,
         ),
         'F' => 
         array (
@@ -54,6 +62,11 @@ class ComposerStaticInit80221bd15d26d86dcaa676c4ea257ffa
         'E' => 
         array (
             'ErickFinancas\\' => 14,
+        ),
+        'D' => 
+        array (
+            'Doctrine\\Inflector\\' => 19,
+            'Doctrine\\Common\\Inflector\\' => 26,
         ),
         'A' => 
         array (
@@ -86,9 +99,17 @@ class ComposerStaticInit80221bd15d26d86dcaa676c4ea257ffa
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
+        'Symfony\\Contracts\\Translation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/translation-contracts',
+        ),
         'Symfony\\Component\\Yaml\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/yaml',
+        ),
+        'Symfony\\Component\\Translation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/translation',
         ),
         'Symfony\\Component\\Filesystem\\' => 
         array (
@@ -126,6 +147,22 @@ class ComposerStaticInit80221bd15d26d86dcaa676c4ea257ffa
         array (
             0 => __DIR__ . '/..' . '/container-interop/container-interop/src/Interop/Container',
         ),
+        'Illuminate\\Support\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/support',
+        ),
+        'Illuminate\\Database\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/database',
+        ),
+        'Illuminate\\Contracts\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/contracts',
+        ),
+        'Illuminate\\Container\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/container',
+        ),
         'Faker\\' => 
         array (
             0 => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker',
@@ -134,13 +171,32 @@ class ComposerStaticInit80221bd15d26d86dcaa676c4ea257ffa
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
+        'Doctrine\\Inflector\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector',
+        ),
+        'Doctrine\\Common\\Inflector\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Common/Inflector',
+        ),
         'Aura\\Router\\' => 
         array (
             0 => __DIR__ . '/..' . '/aura/router/src',
         ),
     );
 
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/..' . '/nesbot/carbon/src',
+    );
+
     public static $prefixesPsr0 = array (
+        'U' => 
+        array (
+            'UpdateHelper\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/kylekatarnls/update-helper/src',
+            ),
+        ),
         'T' => 
         array (
             'Twig_' => 
@@ -171,6 +227,7 @@ class ComposerStaticInit80221bd15d26d86dcaa676c4ea257ffa
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit80221bd15d26d86dcaa676c4ea257ffa::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit80221bd15d26d86dcaa676c4ea257ffa::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit80221bd15d26d86dcaa676c4ea257ffa::$fallbackDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit80221bd15d26d86dcaa676c4ea257ffa::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit80221bd15d26d86dcaa676c4ea257ffa::$classMap;
 

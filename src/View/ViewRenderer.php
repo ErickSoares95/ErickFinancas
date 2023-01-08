@@ -25,6 +25,6 @@ class ViewRenderer implements ViewRendererInterface
         $result = $this->twigEnviroment->render($template, $context);
         $response = new Response();
         $response->getBody()->write($result);
-        return $response;
+        return $response;   
 	}
 }
