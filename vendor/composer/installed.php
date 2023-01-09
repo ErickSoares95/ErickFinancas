@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '04b95cb1dec65da94241844e13f567b4e2877904',
+        'reference' => '28b9027254d57202e8554b2c80ef93624655c959',
         'name' => 'erik.lira/financas',
         'dev' => true,
     ),
@@ -43,7 +43,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '04b95cb1dec65da94241844e13f567b4e2877904',
+            'reference' => '28b9027254d57202e8554b2c80ef93624655c959',
             'dev_requirement' => false,
         ),
         'fzaninotto/faker' => array(
@@ -89,6 +89,15 @@
             'install_path' => __DIR__ . '/../illuminate/support',
             'aliases' => array(),
             'reference' => 'feab1d1495fd6d38970bd6c83586ba2ace8f299a',
+            'dev_requirement' => false,
+        ),
+        'jasny/auth' => array(
+            'pretty_version' => 'v1.0.1',
+            'version' => '1.0.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../jasny/auth',
+            'aliases' => array(),
+            'reference' => '05b25f1441c87a9e1e5e5f05ae61d623ac46c3f7',
             'dev_requirement' => false,
         ),
         'kylekatarnls/update-helper' => array(

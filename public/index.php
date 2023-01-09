@@ -1,5 +1,6 @@
 <?php 
 use ErickFinancas\Application;
+use ErickFinancas\Plugins\AuthPlugin;
 use ErickFinancas\Plugins\DbPlugin;
 use ErickFinancas\Plugins\Routeplugin;
 use ErickFinancas\Plugins\ViewPlugin;
@@ -16,6 +17,7 @@ $app = new Application($serviceContainer);
 $app->plugin(new Routeplugin());
 $app->plugin(new ViewPlugin());
 $app->plugin(new DbPlugin());
+$app->plugin(new AuthPlugin());
 
 //rota sem parametros
 //$app->get('/', function (RequestInterface $request) use ($app) {
@@ -36,6 +38,8 @@ $app->plugin(new DbPlugin());
 // });
 
 require_once __DIR__ . '/../src/controllers/category-costs.php';
+require_once __DIR__ . '/../src/controllers/users.php';
+require_once __DIR__ . '/../src/controllers/auth.php';
 
 //chamada da execução da aplicação
 $app->start();

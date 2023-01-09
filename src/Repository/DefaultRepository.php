@@ -72,8 +72,18 @@ class DefaultRepository implements RepositoryInterface
 	 * @param int $id
 	 * @return mixed
 	 */
-	public function find(int $id) 
+	public function find(int $id, bool $failIfNotExist = true) 
     {
-        return $this->model->findOrFail($id);
+		
+        return $failIfNotExist?$this->model->findOrFail($id):
+		$this->model->find($id);
+	}
+	/**
+	 * @param mixed $field
+	 * @return mixed
+	 */
+	public function findByField(string $field, $value)
+	{
+		return $this->model->where($field,'=',$value)->get();
 	}
 }
